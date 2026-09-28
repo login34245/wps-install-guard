@@ -1,0 +1,33 @@
+name: Ошибка или сбой интерфейса
+description: Перекрытие кнопок, ошибка блокировки или другое неожиданное поведение
+title: "[Ошибка]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Укажи условия, в которых появилась проблема. Скрой личные данные в путях и журнале перед отправкой."
+  - type: input
+    id: version
+    attributes:
+      label: Версия программы
+      placeholder: "Например, 1.2.0"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Windows, разрешение и масштаб
+      placeholder: "Windows 11 Home, 1920×1080, 150%; один или несколько мониторов"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Что произошло и как повторить
+      description: Опиши шаги, ожидаемый результат и фактическое поведение.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Скриншот или обезличенная строка журнала
+      description: Можно приложить изображение; личные сведения в путях необходимо скрыть.
